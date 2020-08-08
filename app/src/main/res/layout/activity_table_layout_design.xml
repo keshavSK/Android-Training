@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlue"
+    android:stretchColumns="*"
+    tools:context=".TableLayoutDesignActivity">
+
+    <TableRow android:padding="5dp">
+
+        <TextView
+            android:text="S no."
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:text="Product"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:text="Category"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:text="Price"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="1">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Apple">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Fruit">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="200">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="2">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Orange">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Fruits">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="100">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="2">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Orange">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Fruits">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="100">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="2">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Orange">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Fruits">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="100">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="2">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Orange">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Fruits">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="100">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="2">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Orange">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="Fruits">
+
+        </TextView>
+
+        <TextView
+            android:layout_margin="0.5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:text="100">
+
+        </TextView>
+    </TableRow>
+
+</TableLayout>

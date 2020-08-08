@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:stretchColumns="0,3"
+    tools:context=".TableLayoutActivity">
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_column="1"
+            android:text="Hello">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_column="2"
+
+            android:text="Button2">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_3"
+
+
+            android:text="Button3">
+
+        </Button>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+
+            android:text="Button1">
+
+        </Button>
+
+        <Button
+            android:layout_column="1"
+            android:text="Button2">
+
+        </Button>
+
+        <Button
+
+            android:text="Button3">
+
+        </Button>
+
+        <Button
+
+            android:text="Button3">
+
+        </Button>
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+
+            android:text="Button1">
+
+        </Button>
+
+        <Button
+
+            android:text="Button2">
+
+        </Button>
+
+        <Button
+
+            android:text="Button3">
+
+        </Button>
+    </TableRow>
+</TableLayout>

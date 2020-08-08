@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ScrollViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/angryimg"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Register"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorBlack">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Name"
+            android:textColorHint="@color/colorOrange"
+            android:inputType="textPersonName">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Contact"
+            android:inputType="number">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Address"
+            android:inputType="textPostalAddress">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter City"
+            android:inputType="text">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter State"
+            android:inputType="text">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Country"
+            android:inputType="text">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_pinCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter PinCode"
+            android:inputType="number">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorOrange"
+            android:text="Submit"
+            android:textColor="@color/colorWhite">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/tvDisplayDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</ScrollView>
