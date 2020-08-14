@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_broadcast"
+        android:title="Broadcast"
+        app:showAsAction="collapseActionView">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_group"
+        android:title="New Group"
+        app:showAsAction="collapseActionView">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_payment"
+        android:title="Payment"
+        app:showAsAction="collapseActionView">
+
+    </item>
+    <item
+        android:id="@+id/menu_starred_message"
+        android:title="Starred Messages"
+        app:showAsAction="collapseActionView">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_setting"
+        android:title="Setting"
+        app:showAsAction="collapseActionView">
+
+    </item>
+</menu>
