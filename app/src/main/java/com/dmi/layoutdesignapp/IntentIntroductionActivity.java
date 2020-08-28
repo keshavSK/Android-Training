@@ -24,6 +24,8 @@ public class IntentIntroductionActivity extends AppCompatActivity {
         btnExplicitIntent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                Intent intent = new Intent(IntentIntroductionActivity.this, OptionMenuActivity.class);
+//                startActivity(intent);
                 Intent intent = new Intent(IntentIntroductionActivity.this, OptionMenuActivity.class);
                 startActivity(intent);
             }
@@ -31,8 +33,10 @@ public class IntentIntroductionActivity extends AppCompatActivity {
         btnImplicitIntent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String uri = String.format(Locale.ENGLISH, "geo:%f,%f", latitude, longitude);
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+//                String uri = String.format(Locale.ENGLISH, "geo:%f,%f", latitude, longitude);
+//                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:0123456789"));
                 startActivity(intent);
             }
         });
