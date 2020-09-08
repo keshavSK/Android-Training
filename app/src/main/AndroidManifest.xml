@@ -9,17 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DatePickerAndTimePickerActivity">
+        <activity android:name=".UserRegistrationActivity">
+
+
+        </activity>
+        <activity android:name=".MobileGridViewActivity"></activity>
+        <activity android:name=".AndroidVersionListViewActivity"></activity>
+        <activity android:name=".GridViewActivity" />
+        <activity android:name=".ListViewActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DateAndTimePickerActivity">
+        <activity android:name=".DatePickerAndTimePickerActivity">
 
         </activity>
-        <activity android:name=".AlertDialogActivity"></activity>
+        <activity android:name=".DateAndTimePickerActivity" />
+        <activity android:name=".AlertDialogActivity" />
         <activity android:name=".IntentIntroductionActivity" />
         <activity android:name=".OptionMenuActivity" />
         <activity android:name=".ScrollViewActivity" />

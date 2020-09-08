@@ -73,7 +73,6 @@ public class DatePickerAndTimePickerActivity extends AppCompatActivity {
                 String selectedDay = day + "-" + (month + 1) + "-" + year;
                 Toast toast = Toast.makeText(DatePickerAndTimePickerActivity.this, "Selected Date : " + selectedDay, Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.TOP | Gravity.CENTER, 0, 0);
-
                 toast.show();
             }
         }, year, month, dayOfMonth);
