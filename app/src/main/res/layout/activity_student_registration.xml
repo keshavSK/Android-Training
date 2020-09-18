@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".StudentRegistrationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Student Registration"
+        android:textColor="@color/colorBlack">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Student Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtStudentContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Student Contact"
+        android:inputType="number">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtStudentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="textPassword">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnStudentRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Register"
+        android:textColor="@color/colorWhite">
+
+    </Button>
+
+</LinearLayout>
