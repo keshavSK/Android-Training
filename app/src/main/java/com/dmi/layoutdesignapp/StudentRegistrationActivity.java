@@ -1,5 +1,6 @@
 package com.dmi.layoutdesignapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,7 +9,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.dmi.layoutdesignapp.helperss.DbHelper;
+import com.dmi.layoutdesignapp.helpers.DbHelper;
 
 public class StudentRegistrationActivity extends AppCompatActivity {
     private EditText edtName, edtContact, edtPassword;
@@ -33,6 +34,9 @@ public class StudentRegistrationActivity extends AppCompatActivity {
                 boolean isInserted = dbHelper.insertStudent(studentName, studentContact, studentPassword);
                 if (isInserted) {
                     Toast.makeText(StudentRegistrationActivity.this, "Student Registration Successfully", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(StudentRegistrationActivity.this, StudentDetailsListActivity.class);
+                    startActivity(intent);
+                    finish();
                 } else {
                     Toast.makeText(StudentRegistrationActivity.this, "Please try again. Student not registered", Toast.LENGTH_SHORT).show();
                 }
