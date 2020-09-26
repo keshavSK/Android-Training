@@ -2,36 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="10dp">
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="10">
 
-    <TextView
-        android:id="@+id/rowStudentName"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Student Name"
-        android:textColor="@color/colorBlack">
+        android:layout_weight="9"
+        android:orientation="vertical">
 
-    </TextView>
+        <TextView
+            android:id="@+id/rowStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textColor="@color/colorBlack">
 
-    <TextView
-        android:id="@+id/rowStudentContact"
-        android:layout_width="match_parent"
+        </TextView>
+
+        <TextView
+            android:id="@+id/rowStudentContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="1234567890">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/rowStudentPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="1323"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic">
+
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgDeleteStudent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="1234567890">
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_delete_24">
 
-    </TextView>
+    </ImageView>
 
-    <TextView
-        android:id="@+id/rowStudentPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="1323"
-        android:textColor="@color/colorPrimaryDark"
-        android:textStyle="italic">
-
-    </TextView>
 
 </LinearLayout>

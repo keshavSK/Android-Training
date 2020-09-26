@@ -52,4 +52,5 @@ public class StudentDetailsListActivity extends AppCompatActivity {
             }
         });
     }
+
 }

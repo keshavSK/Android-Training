@@ -17,31 +17,45 @@
 
     </TextView>
 
-    <TextView
+    <EditText
         android:id="@+id/tvStudentName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:hint="Student Name"
         android:text="Student Name">
 
-    </TextView>
+    </EditText>
 
-    <TextView
+    <EditText
         android:id="@+id/tvStudentContact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:hint="Student Contact"
         android:text="1234567890">
 
-    </TextView>
+    </EditText>
 
-    <TextView
+    <EditText
         android:id="@+id/tvStudentPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:hint="Student Password"
         android:text="1234">
 
-    </TextView>
+    </EditText>
+
+    <Button
+        android:id="@+id/btnUpdateStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Update"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite">
+
+    </Button>
 
 </LinearLayout>

@@ -54,6 +54,7 @@ public class DbHelper extends SQLiteOpenHelper {
         contentValues.put(COLUMN_STUDENT_CONTACT, studentContact);
         contentValues.put(COLUMN_STUDENT_PASSWORD, studentPassword);
         long id = db.insert(TABLE_STUDENT_NAME, null, contentValues);
+        //int update = db.update(TABLE_STUDENT_NAME, contentValues, COLUMN_STUDENT_ID + " = ?", new String[]{studentName});
         if (id == -1) {
             return false;
         } else {
@@ -132,5 +133,24 @@ public class DbHelper extends SQLiteOpenHelper {
         cursor.close();
         database.close();
         return studentDetailsModel;
+    }
+
+    public int updateStudent(int studentId, String studentName, String studentContact, String password) {
+        SQLiteDatabase database = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COLUMN_STUDENT_NAME, studentName);
+        contentValues.put(COLUMN_STUDENT_CONTACT, studentContact);
+        contentValues.put(COLUMN_STUDENT_PASSWORD, password);
+        // string to int conversion
+        String studId = String.valueOf(studentId);
+        int value = database.update(TABLE_STUDENT_NAME, contentValues, COLUMN_STUDENT_ID + " = ?", new String[]{studId});
+        return value;
+    }
+
+    public int deleteStudent(int studentId) {
+        SQLiteDatabase database = getWritableDatabase();
+        String studId = String.valueOf(studentId);
+        int returnValue = database.delete(TABLE_STUDENT_NAME, COLUMN_STUDENT_ID + " = ? ", new String[]{studId});
+        return returnValue;
     }
 }
