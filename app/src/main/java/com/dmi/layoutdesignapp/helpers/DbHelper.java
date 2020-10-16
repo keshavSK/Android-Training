@@ -62,6 +62,22 @@ public class DbHelper extends SQLiteOpenHelper {
         }
     }
 
+    public StudentModel signIn(String username, String password) {
+        StudentModel studentModel = new StudentModel();
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sql = "SELECT * FROM " + TABLE_STUDENT_NAME + " WHERE " + COLUMN_STUDENT_CONTACT + " = " + username + " AND " + COLUMN_STUDENT_PASSWORD + " = " + password;
+        Cursor cursor = db.rawQuery(sql, null);
+        if (cursor.moveToFirst()) {
+            studentModel.setStudentId(cursor.getInt(cursor.getColumnIndex(COLUMN_STUDENT_ID)));
+            studentModel.setStudentName(cursor.getString(cursor.getColumnIndex(COLUMN_STUDENT_NAME)));
+            studentModel.setStudentContact(cursor.getString(cursor.getColumnIndex(COLUMN_STUDENT_CONTACT)));
+            studentModel.setStudentPassword(cursor.getString(cursor.getColumnIndex(COLUMN_STUDENT_PASSWORD)));
+        }
+        cursor.close();
+        db.close();
+        return studentModel;
+    }
+
     public ArrayList<StudentModel> getAllStudents() {
         ArrayList<StudentModel> studentList = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();

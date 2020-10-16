@@ -9,4 +9,5 @@
     <string name="sign_up"><u>Sign Up</u></string>
     <string name="forgot_password"><u>Forgot Password</u></string>
     <string name="hello">Hello</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

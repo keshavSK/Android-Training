@@ -3,63 +3,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".AlertDialogActivity">
+    tools:context=".SharePreferenceActivity">
 
-    <TextView
-        android:id="@+id/tvAlertStudentId"
+    <EditText
+        android:id="@+id/edtSharePrefUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorBlack"
-        android:textSize="16sp">
+        android:hint="Enter user name"
+        android:inputType="textPersonName">
 
-    </TextView>
-
-    <TextView
-        android:id="@+id/tvAlertStudentName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorBlack"
-        android:textSize="16sp">
-
-    </TextView>
-
-    <TextView
-        android:id="@+id/tvAlertStudentContact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorBlack"
-        android:textSize="16sp">
-
-    </TextView>
+    </EditText>
 
     <Button
-        android:id="@+id/showDialog"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnSharePrefSave"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
-        android:padding="10dp"
-        android:text="Show Dialog"
+        android:text="Save"
         android:textColor="@color/colorWhite">
 
     </Button>
 
     <TextView
-        android:id="@+id/tvAlertLogout"
+        android:id="@+id/tvSharePrefGetData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Logout"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="16sp"
-        android:textStyle="italic">
+        android:textSize="16sp">
 
     </TextView>
+
+    <Button
+        android:id="@+id/btnSharePrefGetData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Get Data"
+        android:textColor="@color/colorWhite">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnSharePrefClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Clear"
+        android:textColor="@color/colorWhite">
+
+    </Button>
 </LinearLayout>

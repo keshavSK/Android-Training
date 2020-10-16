@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="30sp"
-    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/login"
-        android:textStyle="bold"
         android:textColor="@color/colorBlack"
-        android:textSize="20sp">
+        android:textSize="20sp"
+        android:textStyle="bold">
 
     </TextView>
 
@@ -30,13 +30,13 @@
     </TextView>
 
     <EditText
+        android:id="@+id/edtMainUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:inputType="number"
         android:hint="@string/enter_username"
-        android:textColorHint="@color/colorGray"
-        >
+        android:inputType="number"
+        android:textColorHint="@color/colorGray">
 
     </EditText>
 
@@ -51,39 +51,41 @@
     </TextView>
 
     <EditText
+        android:id="@+id/edtMainPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:hint="@string/enter_password"
         android:inputType="numberPassword"
-        android:textColorHint="@color/colorGray"
-        android:hint="@string/enter_password">
+        android:textColorHint="@color/colorGray">
 
     </EditText>
 
     <Button
+        android:id="@+id/btnMainLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
-        android:textColor="@color/colorWhite"
-        android:text="@string/login">
+        android:text="@string/login"
+        android:textColor="@color/colorWhite">
 
     </Button>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="10dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:text="@string/don_t_have_an_account"
             android:textColor="@color/colorBlack"
-            android:text="@string/don_t_have_an_account">
+            android:textSize="16sp">
 
         </TextView>
 
@@ -91,10 +93,10 @@
             android:id="@+id/tvSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             android:layout_marginLeft="5dp"
+            android:text="@string/sign_up"
             android:textColor="@color/colorOrange"
-            android:text="@string/sign_up">
+            android:textSize="16sp">
 
         </TextView>
 
@@ -105,8 +107,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:textColor="@color/colorOrange"
-        android:text="@string/forgot_password">
+        android:text="@string/forgot_password"
+        android:textColor="@color/colorOrange">
 
     </TextView>
 
@@ -115,8 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:textColor="@color/colorOrange"
-        >
+        android:textColor="@color/colorOrange">
 
     </TextView>
 </LinearLayout>

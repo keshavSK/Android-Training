@@ -34,7 +34,7 @@ public class StudentRegistrationActivity extends AppCompatActivity {
                 boolean isInserted = dbHelper.insertStudent(studentName, studentContact, studentPassword);
                 if (isInserted) {
                     Toast.makeText(StudentRegistrationActivity.this, "Student Registration Successfully", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(StudentRegistrationActivity.this, StudentDetailsListActivity.class);
+                    Intent intent = new Intent(StudentRegistrationActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
